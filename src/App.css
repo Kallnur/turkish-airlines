@@ -1,0 +1,64 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#logo{
+  padding: 30px 30px 25px;
+  margin: 0 auto;
+}
+
+#logo img{
+  width: 80px;
+}
+
+.main{
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Custom styles antd */
+
+.ant-radio-button-wrapper{
+  color: var(--active-hex);
+  border: 1px solid #d9d9d9;
+}
+
+.customize-filter-tabs .ant-radio-button-wrapper-checked{
+  background: #2196f3;
+  color: #fff;
+}
+.customize-filter-tabs .ant-radio-button-wrapper:hover{
+  border-color: var(--active-hex);
+  background: #f2fcff;
+}
+
+.customize-filter-tabs .ant-radio-button-wrapper-checked:hover{
+  color: #fff;
+  background: #2196f3;
+}
+
+.customize-filter-tabs .ant-radio-group{
+  width: 100%;
+}
+
+.customize-filter-tabs .ant-radio-group .ant-radio-button-wrapper::before{
+  display: none;
+}
+
+.customize-filter-tabs .ant-radio-group .ant-radio-button-wrapper{
+  width: 32%;
+}
+
+.customize-filter-check-list .ant-checkbox-group{
+  flex-direction: column;
+  gap: 2px;
+}

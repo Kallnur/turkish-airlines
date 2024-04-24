@@ -1,0 +1,23 @@
+.main{
+    /* min-width: 180px; */
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.time{
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 100%;
+    margin-bottom: 12px;
+}
+
+.name{
+    font-weight: 600;
+}
+
+.date{
+    font-weight: 400;
+    color: var(--silver-hex);
+}

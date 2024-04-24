@@ -1,0 +1,75 @@
+.input{
+    display: none;
+}
+
+.label{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    gap: 10px;
+    align-items: center;
+    padding: 6px 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.label::before{
+    position: absolute;
+    top: 0;
+    left: -25%;
+    content: "";
+    background-color: transparent;
+    width: 150%;
+    height: 100%;
+    z-index: 1;
+    transition: .2s;
+}
+
+.label *{
+    z-index: 2;
+}
+
+.checkmark{
+    display: inline-block;
+    border: 1px solid var(--silver-hex);
+    border-radius: 20%;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 900;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkmark img{
+    width: 68%;
+    display: none;
+}
+
+.input:checked + .checkmark{
+    color: var(--active-hex);
+    border-color: var(--active-hex);
+}
+
+.input:checked + .checkmark img{
+    display: unset;
+}
+
+.only{
+    color: transparent;
+    font-weight: 500;
+    margin-left: auto;
+    font-size: 11px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+.label:hover .only{
+    color: var(--active-hex);
+}
+.label:hover::before {
+    background-color: var(--main-bg-hex);
+}
